@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('manager', function (Blueprint $table) {
-            $table->integer('m_id');
-            $table->string('m_name');
-            $table->string('m_pass');
-            $table->string('m_email')->unique();
-            $table->date('m_dob');
+            $table->integer('manager_id');
+            $table->string('manager_name');
+            //$table->string('manager_pass');
+            $table->string('manager_email')->unique();
+            $table->date('manager_dob');
             $table->timestamps();
         });
     }

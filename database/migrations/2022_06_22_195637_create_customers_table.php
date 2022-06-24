@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
-            $table->integer('c_id');
-            $table->string('c_name');
-            $table->string('c_pass');
-            $table->string('c_email')->unique();
-            $table->date('c_dob');
+            $table->integer('customer_id');
+            $table->string('customer_name');
+            //$table->string('c_pass');
+            $table->string('customer_email')->unique();
+            $table->date('customer_dob');
             $table->timestamps();
         });
     }
