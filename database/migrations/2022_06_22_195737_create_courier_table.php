@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('courier', function (Blueprint $table) {
-            $table->integer('d_id');
-            $table->string('d_name');
-            $table->string('d_pass');
-            $table->string('d_email')->unique();
-            $table->date('d_dob');
+            $table->integer('courier_id');
+            $table->string('courier_name');
+            //$table->string('courier_pass');
+            $table->string('courier_email')->unique();
+            $table->date('courier_dob');
             $table->timestamps();
         });
     }
